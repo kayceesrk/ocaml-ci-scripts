@@ -133,7 +133,7 @@ case $TRAVIS_OS_NAME in
     linux) install_on_linux ;;
 esac
 
-OPAM_SWITCH=${OPAM_SWITCH:-$OCAML_VERSION}
+OPAM_SWITCH=${OPAM_SWITCH:-${OCAML_VERSION}.3}
 
 export OPAMYES=1
 
