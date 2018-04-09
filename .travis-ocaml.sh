@@ -120,9 +120,12 @@ install_on_osx () {
   esac
   brew update &> /dev/null
   case "$OCAML_VERSION,$OPAM_VERSION" in
-    4.02.2+multicore,1.2.2) OCAML_VERSION=4.02; OCAML_FULL_VERSION=4.02.2+multicore; brew install opam ;;
-    4.04.2+multicore,1.2.2) OCAML_VERSION=4.02; OCAML_FULL_VERSION=4.04.2+multicore; brew install opam ;;
-    4.06.1+multicore,1.2.2) OCAML_VERSION=4.02; OCAML_FULL_VERSION=4.06.1+multicore; brew install opam ;;
+    4.02.2+multicore,1.2.2) OCAML_VERSION=4.02; OCAML_FULL_VERSION=4.02.2+multicore
+			brew install opam ;;
+    4.04.2+multicore,1.2.2) OCAML_VERSION=4.02; OCAML_FULL_VERSION=4.04.2+multicore
+			brew install opam ;;
+    4.06.1+multicore,1.2.2) OCAML_VERSION=4.02; OCAML_FULL_VERSION=4.06.1+multicore
+			brew install opam ;;
     *) echo "Unknown OCAML_VERSION=$OCAML_VERSION OPAM_VERSION=$OPAM_VERSION"
        exit 1 ;;
   esac
