@@ -20,4 +20,5 @@ export OPAMYES=1
 eval $(opam config env)
 
 echo -en "travis_fold:end:prepare.ci\r"
+opam install ocamlbuild
 make
